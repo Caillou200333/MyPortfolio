@@ -1,18 +1,50 @@
+import {
+    section,
+    container,
+    sectionTitle,
+    list,
+    itemList,
+    link
+} from "@/styles/styles";
+
 export default function Contact() {
     return (
-    <section id="contact" className="px-6 py-20 max-w-3xl mx-auto">
+    <section id="contact" className={`${section} ${container}`}>
 
-        <h2 className="text-2xl font-bold mb-6">Contact</h2>
+        <h2 className={sectionTitle}>Contact</h2>
 
-        <div className="space-y-2 text-zinc-600 dark:text-zinc-400">
+        <div className={list}>
 
-            <p>Email: tonmail@gmail.com</p>
-            <p>GitHub: github.com/tonprofil</p>
-            <p>LinkedIn: linkedin.com/in/tonprofil</p>
-            <p>CV: /cv.pdf</p>
+            <div className={itemList}>
+                <span>Email</span>
+                <a href="mailto:pierrerochereau33@gmail.com" className={link}>
+                    pierrerochereau33@gmail.com
+                </a>
+            </div>
 
+            <div className={itemList}>
+                <span>GitHub</span>
+                <a href="https://github.com/Caillou200333" className={link}>
+                    github.com/Caillou200333
+                </a>
+            </div>
+            
+            {/*
+            <div className={itemList}>
+                <span>LinkedIn</span>
+                <a href="https://linkedin.com/in/tonprofil" className={link}>
+                    linkedin.com/in/tonprofil
+                </a>
+            </div>
+
+            <div className={itemList}>
+                <span>CV</span>
+                <a href="/cv.pdf" className={link} target="_blank">
+                    Download PDF
+                </a>
+            </div>
+            */}
         </div>
-
     </section>
     );
 }

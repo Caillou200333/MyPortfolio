@@ -1,30 +1,43 @@
+import {
+    sectionCentered,
+    container,
+    smallText,
+    title,
+    subtitle,
+    paragraph
+} from "@/styles/styles";
+
 export default function Hero() {
     return (
-    <section className="px-6 pt-28 pb-20 max-w-3xl mx-auto text-center bg-white dark:bg-zinc-950 transition-colors">
-        <div className="max-w-3xl text-center">
+    <section className={`${sectionCentered} ${container} pt-28 pb-20`}>
+        {/* Badge */}
+        <p className={smallText}>
+            Hello, I'm
+        </p>
 
-            {/* Badge */}
-            <p className="text-sm mb-4 text-zinc-500 dark:text-zinc-400">
-                Hello, I'm
-            </p>
+        {/* Nom */}
+        <h1 className={title}>
+            ROCHEREAU Pierre
+        </h1>
 
-            {/* Nom */}
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-zinc-900 dark:text-white">
-                ROCHEREAU Pierre
-            </h1>
+        {/* Sous-titre */}
+        <h2 className={subtitle}>
+            Computer Science Engineering Student • Game Development • Systems Programming • Network Programming
+        </h2>
 
-            {/* Sous-titre */}
-            <h2 className="mt-4 text-xl sm:text-2xl text-zinc-600 dark:text-zinc-300">
-                Computer Science Engineering Student • Game Development • Software Engineering
-            </h2>
-
-            {/* Description courte (important recruteur) */}
-            <p className="mt-6 text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                Engineering student specializing in computer science, with a strong focus on
-                game development, systems programming, and software engineering. Currently pursuing
-                a dual degree in Computer Science (Game Development specialization).
-            </p>
+        {/* Status */}
+        <div className={paragraph} >
+            Available for internships | France
         </div>
+
+        {/* Description courte (important recruteur) */}
+        <p className={paragraph}>
+            Engineering student specializing in Computer Science with a strong interest in 
+            game development, systems programming, and network programming. Experienced in 
+            developing projects in modern C++, ranging from gameplay programming and multiplayer 
+            systems to physics engines. Currently pursuing a dual degree in Computer Science with 
+            a specialization in Game Development.
+        </p>
     </section>
     );
 }

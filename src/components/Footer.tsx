@@ -1,6 +1,8 @@
+import {footer} from "@/styles/styles";
+
 export default function Footer() {
     return (
-    <footer className="text-center py-10 text-sm text-zinc-500">
+    <footer className={footer}>
         © {new Date().getFullYear()} ROCHEREAU Pierre — Portfolio
     </footer>
     );

@@ -62,7 +62,8 @@ export default function About() {
                 className={buttonSecondary}
             >
                 Download my CV
-            </Link>*/}
+            </Link>
+            */}
         </div>
     </section>
     );

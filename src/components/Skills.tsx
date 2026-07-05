@@ -1,31 +1,52 @@
+import {
+    section,
+    container,
+    sectionTitle,
+    grid,
+    card,
+    cardTitle,
+    cardText
+} from "@/styles/styles";
+
 export default function Skills() {
     return (
-    <section id="skills" className="px-6 py-20 max-w-4xl mx-auto">
+    <section id="skills" className={`${section} ${container}`}>
         
-        <h2 className="text-2xl font-bold mb-6">Skills</h2>
+        <h2 className={sectionTitle}>Skills</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+        <div className={grid}>
             
-            <div>
-                <h3 className="font-semibold mb-2">Frontend</h3>
-                <p>React / Next.js / Tailwind / HTML / CSS</p>
+            {/* Frontend */}
+            <div className={card}>
+                <h3 className={cardTitle}>Frontend</h3>
+                <p className={cardText}>
+                    React / Next.js / Tailwind / HTML / CSS
+                </p>
             </div>
 
-            <div>
-                <h3 className="font-semibold mb-2">Backend</h3>
-                <p>Node.js / API REST / Express</p>
+            {/* Backend */}
+            <div className={card}>
+                <h3 className={cardTitle}>Backend</h3>
+                <p className={cardText}>
+                    Node.js / API REST / Express
+                </p>
             </div>
 
-            <div>
-                <h3 className="font-semibold mb-2">Langages</h3>
-                <p>JavaScript / TypeScript / Python / C</p>
+            {/* Languages */}
+            <div className={card}>
+                <h3 className={cardTitle}>Languages</h3>
+                <p className={cardText}>
+                    JavaScript / TypeScript / Python / C / C++
+                </p>
             </div>
 
-            <div>
-                <h3 className="font-semibold mb-2">Outils</h3>
-                <p>Git / GitHub / Linux / VS Code</p>
+            {/* Tools */}
+            <div className={card}>
+                <h3 className={cardTitle}>Tools</h3>
+                <p className={cardText}>
+                    Git / GitHub / Linux / VS Code
+                </p>
             </div>
-
         </div>
     </section>
     );
