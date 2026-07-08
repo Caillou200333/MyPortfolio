@@ -7,7 +7,7 @@ import {
     paragraph,
     buttonGroup,
     buttonPrimary,
-    buttonSecondary,
+    buttonSecondary
 } from "@/styles/styles";
 
 export default function About() {

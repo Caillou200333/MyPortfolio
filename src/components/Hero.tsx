@@ -21,7 +21,7 @@ export default function Hero() {
         </h1>
 
         {/* Sous-titre */}
-        <h2 className={subtitle}>
+        <h2 className={`${subtitle} max-w-2xl mx-auto`}>
             Computer Science Engineering Student • Game Development • Systems Programming • Network Programming
         </h2>
 

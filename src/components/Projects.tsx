@@ -1,44 +1,51 @@
 import { projects } from "@/data/projects";
 import Image from "next/image";
+import {
+    section,
+    container,
+    sectionTitle,
+    paragraph,
+    list,
+    card,
+    cardTitle,
+    cardSubtitle
+} from "@/styles/styles";
 
 export default function Projects() {
     return (
-    <section id="projects" className="px-6 py-20 max-w-5xl mx-auto">
+    <section id="projects" className={`${section} ${container}`}>
         
-        <h2 className="text-2xl font-bold mb-10">Projects</h2>
+        <h2 className={sectionTitle}>Projects</h2>
 
-        <div className="space-y-10">
+        <div className={list}>
             {projects.map((p, i) => (
-            <div key={i} className="grid md:grid-cols-2 gap-6 border-b pb-6">
+            <div key={i} className={`${card} grid md:grid-cols-2 gap-6 border-b pb-6`}>
 
                 <Image
                     src={p.image}
                     alt={p.title}
-                    width={500}
-                    height={300}
+                    width={400}
+                    height={200}
                     className="rounded-lg"
                 />
 
                 <div>
-                    <h3 className="text-xl font-semibold">{p.title}</h3>
+                    <h3 className={cardTitle}>{p.title}</h3>
 
-                    <p className="text-sm text-zinc-500">{p.tech}</p>
-                    <p className="text-sm text-zinc-500">{p.duration} • {p.team}</p>
+                    <p className={cardSubtitle}>{p.duration} • {p.team}</p>
+                    <p className={cardSubtitle}>{p.tech}</p>
 
-                    <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-                    {p.description}
-                    </p>
+                    <p className={paragraph}>{p.description}</p>
 
-                    <p className="mt-2 text-sm">Rôle: {p.role}</p>
+                    <p className={paragraph}>Rôle: {p.role}</p>
 
                     <div className="mt-4 flex gap-3">
                         <a href={p.github} className="px-3 py-1 border rounded">GitHub</a>
                         <a href={p.demo} className="px-3 py-1 border rounded">Demo</a>
                     </div>
                 </div>
-
             </div>
-        ))}
+            ))}
         </div>
 
     </section>
