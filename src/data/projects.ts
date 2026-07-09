@@ -1,24 +1,27 @@
 export const projects = [
     {
-        title: "Portfolio Web",
-        tech: "Next.js, Tailwind",
-        duration: "1 semaine",
-        team: "Solo",
-        role: "Full-stack",
-        description: "Portfolio personnel moderne avec dark mode.",
-        image: "/projects/portfolio.png",
-        github: "https://github.com/xxx",
-        demo: "https://xxx.vercel.app"
+        title: "Downsampling",
+        tech: "Unreal Engine 5.6, Blueprint",
+        duration: "2 months",
+        team: "3 developers",
+        description: "Developed a first-person puzzle game where players progress through a series \
+        of levels by using unique abilities to solve environmental puzzles and overcome obstacles.",
+        contribution: "Custom save system | Run timer system tracking | Interactive terminals | \
+        In-game video tutorials | UI menus | Debug",
+        image: "/photo.png",
+        //github: "https://github.com/xxx",
+        demo: "https://drive.google.com/drive/folders/190hFiTZ4RDq4StC8bnxranY7TC0poXNn?usp=sharing"
     },
     {
-        title: "Project 1",
-        tech: "Next.js, Tailwind",
-        duration: "1 semaine",
-        team: "Duo",
-        role: "Full-stack",
-        description: "bbbbb bbbbbbb bbb bbbbbb bbbbbbb bbbbbbbb bbbbb bbb b bbbbbbb bbbb bbbb bb bbbbb bbbb bbbb bbbb bb bbbbbbbbb b bbbb b bbbbb bbbb bbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbb bbbbbbb b b bb bbbbbb bb bbbb bbbb bbbbbbb bb bb bb bbbbb bbb bb bb bbbbbbb bb bb b bb b bbbbbbbbbbbbbbbbbbbbbb bb bb bbb bb b bbbbbbbb bbbbbbb bbbbbb b b b b b",
+        title: "Frontline Bastion",
+        tech: "Unreal Engine 5.6, C++, Blueprint",
+        duration: "4 months",
+        team: "5 developers",
+        description: "Development of a solo FPS/Tower Defense game set in a futuristic environment, \
+        where the objective is to defend a base by fighting continuous waves of enemies.",
+        contribution: "",
         image: "/photo.png",
-        github: "https://github.com/xxx",
-        demo: "https://xxx.vercel.app"
-    }
+        //github: "https://github.com/xxx",
+        demo: "https://drive.google.com/drive/folders/190hFiTZ4RDq4StC8bnxranY7TC0poXNn?usp=sharing"
+    },
 ];

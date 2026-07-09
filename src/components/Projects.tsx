@@ -37,10 +37,12 @@ export default function Projects() {
 
                     <p className={paragraph}>{p.description}</p>
 
-                    <p className={paragraph}>Rôle: {p.role}</p>
+                    <p className={paragraph}>Contributions : {p.contribution}</p>
 
                     <div className="mt-4 flex gap-3">
+                        {/*
                         <a href={p.github} className="px-3 py-1 border rounded">GitHub</a>
+                        */}
                         <a href={p.demo} className="px-3 py-1 border rounded">Demo</a>
                     </div>
                 </div>
